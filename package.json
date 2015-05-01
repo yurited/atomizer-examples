@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "description": "Examples of Atomic CSS with Atomizer",
   "scripts": {
-    "start": "grunt --gruntfile ../Gruntfile.js"
+    "start": "grunt --gruntfile ./Gruntfile.js"
   },
   "repository": {
     "type": "git",
