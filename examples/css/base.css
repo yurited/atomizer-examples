@@ -1,0 +1,170 @@
+/**
+ * =================================================================================
+ * This style sheet targets attributes and type selectors, it comes after Normalize.
+ * Values in here should be driven by the design language.
+ * =================================================================================
+ */
+
+/**
+ * WebKit bug related to list items and inheritance
+ * https://github.com/necolas/normalize.css/issues/334
+ */
+
+[dir] {
+    text-align: start;
+}
+
+
+[role=button] {
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+
+:link {
+    text-decoration: none;
+    color: #324fe1;
+}
+
+:visited {
+    color: #324fe1;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+abbr[title] {
+    border: 0;
+    cursor: help;
+}
+
+b {
+    font-weight: normal;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+}
+
+/**
+ * TODO: should we reserve (1) for heading and other "bold" text?
+ */
+body {
+    background: #fff;
+    color: #000;
+    font: 13px/1.3 "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 100%;
+    text-rendering: optimizeLegibility; /* 1 */
+    font-smoothing: antialiased; /* 1 */
+    -moz-osx-font-smoothing: grayscale; /* 1 */
+}
+
+button {
+    box-sizing: border-box;
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: normal;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+dl,
+dd,
+p,
+table {
+    margin: 0;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+}
+
+i {
+    font-style: normal;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+    vertical-align: bottom;
+}
+
+input {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+input[disabled] {
+    cursor: default;
+}
+
+input[type=checkbox],
+input[type=radio] {
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="file"],
+input[type="image"] {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 0;
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
+
+input::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    opacity: 1;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-type: none;
+}
+
+optgroup {
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+select {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+select[size],
+select[multiple] {
+    height: auto;
+}
+
+textarea {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    box-sizing: border-box;
+    font: 16px "Helvetica Neue", Helvetica, Arial, sans-serif;
+    resize: vertical;
+}
+
+textarea:focus {
+    outline: 0;
+    border-color: rgba(82, 168, 236, 0.8);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+}
