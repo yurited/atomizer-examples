@@ -11,6 +11,9 @@ module.exports = function(grunt) {
         atomizer: {
             // basic
             dev: {
+                options: {
+                    configFile: './examples/config.js'
+                },
                 files: [{
                     src: ['./examples/**/*.html'],
                     dest: './examples/css/atomic.css'
@@ -36,7 +39,9 @@ module.exports = function(grunt) {
                     livereload: true
                 },
                 files: [
-                    './examples/**/*.html'
+                    './examples/**/*.html',
+                    './examples/**/*.js',
+                    './examples/**/*.css'
                 ],
                 tasks: ['atomizer']
             }

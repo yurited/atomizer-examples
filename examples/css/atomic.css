@@ -4,6 +4,9 @@
 .Bgc\(\#add8e6\) {
   background-color: #add8e6;
 }
+.Bgc\(\$primary\) {
+  background-color: #f3f3f3;
+}
 .D\(ib\) {
   display: inline-block;
 }
